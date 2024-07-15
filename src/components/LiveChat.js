@@ -26,7 +26,7 @@ dispatch(
     return ()=>clearInterval(i);
   },[])
 
-
+  
   return (
     <>
     <div className="w-full h-[500px] ml-2 p-2 border border-black bg-slate-100 rounded-lg overflow-y-scroll flex flex-col-reverse">
@@ -42,6 +42,7 @@ dispatch(
             name:"Priyanka Gupta",
             message:Livemessage,
           }))
+          setLivemessage("");
         }}>
           <input className="p-2 w-96"
           type="text" value={Livemessage} onChange={(e)=>setLivemessage(e.target.value)}  />

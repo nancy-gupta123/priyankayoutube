@@ -93,7 +93,7 @@ const Head = () => {
         </div>
         {showSuggestion && (
           <div className="fixed px-2 py-2 bg-white rounded-lg w-[34rem] border-gray-200 absolute">
-            <ul>
+            <ul className="cursor-pointer">
               {suggestions.map((s) => (
                 <li
                   key={s}

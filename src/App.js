@@ -6,6 +6,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import MainContainer from "./components/MainContainer";
 import WatchPage from "./components/WatchPage";
 import Demo from "./components/Demo";
+import Shorts from "./components/Shorts";
+import Videosidebar from "./components/Videosidebar";
+
 
 
 
@@ -27,6 +30,15 @@ const appRouter=createBrowserRouter([
       path:"Demo",
       element:<Demo/>
     },
+    {
+      path:"shorts",
+      element:<Shorts/>
+    },
+    {
+      path:"videos",
+      element:<Videosidebar/>
+    },
+    
    
    ]
   }
