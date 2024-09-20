@@ -92,7 +92,7 @@ const Head = () => {
           </button>
         </div>
         {showSuggestion && (
-          <div className="fixed px-2 py-2 bg-white rounded-lg w-[34rem] border-gray-200 absolute">
+          <div className="fixed px-2 py-2 bg-white rounded-lg w-[34rem] border-gray-200 ">
             <ul className="cursor-pointer">
               {suggestions.map((s) => (
                 <li

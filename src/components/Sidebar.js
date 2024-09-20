@@ -7,15 +7,15 @@ const Sidebar = () => {
 
   if(!isMenuOpen)return null;
   return (
-    <div className='w-48 p-5 shadow-lg'>
-        <ul>
+    <div className='flex flex-col w-48 p-5 shadow-lg '>
+        <ul className=''>
          <li><Link to="/">Home</Link></li>
             <li><Link to="shorts">Shorts</Link></li>
             <li>Videos</li>
             <li>Live</li>
         </ul>
         <h1 className='text-2xl font-bold'>Subscriptions</h1>
-        <ul>
+        <ul className=''>
             <li>Music</li>
             <li>Sports</li>
             <li>Gaming</li>
