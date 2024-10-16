@@ -13,6 +13,7 @@ const Sidebar = () => {
             <li><Link to="shorts">Shorts</Link></li>
             <li>Videos</li>
             <li>Live</li>
+            <li>History</li>
         </ul>
         <h1 className='text-2xl font-bold'>Subscriptions</h1>
         <ul className=''>
