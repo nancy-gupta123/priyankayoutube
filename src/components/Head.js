@@ -26,20 +26,22 @@ const Head = () => {
     return () => {
       clearTimeout(timer);
     };
-  }, [searchQuerry]);
+  },[searchCache]);
 
   const getSearchSuggestions = async () => {
-    
-    const data = await fetch(Youtube_search_api + searchQuerry);
-    const json = await data.json();
-    setsuggestions(json[1]);
-
-    dispatch(
-      cacheResult({
-        [searchQuerry]: json[1],
-      })
-    );
-    //console.log(json[1]);
+    try {
+      const data = await fetch(Youtube_search_api + searchQuerry, { mode: 'no-cors' });
+      const json = await data.json(); // This will likely not work due to opaque response
+      setsuggestions(json[1]);
+  
+      dispatch(
+        cacheResult({
+          [searchQuerry]: json[1],
+        })
+      );
+    } catch (error) {
+      console.error("Error fetching suggestions:", error);
+    }
   };
 
   const toggleMenuHandler = () => {
