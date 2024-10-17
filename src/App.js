@@ -8,6 +8,8 @@ import WatchPage from "./components/WatchPage";
 import Demo from "./components/Demo";
 import Shorts from "./components/Shorts";
 import Videosidebar from "./components/Videosidebar";
+import Historypage from "./components/Historypage";
+
 
 
 
@@ -37,6 +39,10 @@ const appRouter=createBrowserRouter([
     {
       path:"videos",
       element:<Videosidebar/>
+    },
+    {
+      path:"history",
+      element:<Historypage/>
     },
     
    
