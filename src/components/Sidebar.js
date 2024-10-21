@@ -31,7 +31,7 @@ const Sidebar = () => {
       
       <h1 className='text-2xl font-bold'>Subscriptions</h1>
       <ul>
-        <li><i class="fa-solid fa-music"></i>Music</li>
+        <li>Music</li>
         <li>Sport</li>
         <li>Gaming</li>
         <li>Movies</li>
